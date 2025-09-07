@@ -1,447 +1,470 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 body {
-    line-height: 1.5;
-    font-family: "Rajdhani", sans-serif;
-    overflow: hidden;
-    overflow-y: auto;
+  line-height: 1.5;
+  font-family: "Rajdhani", sans-serif;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .landing-page {
-    background: url(/Images/landing-background.jpg);
-    background-size: cover;
-    /* background-position: 0 -80px; */
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    /* background-size: cover; */
-    top: 0;
-    /* bottom: 0; */
+  background: url(../Images/landing-background.jpg);
+  background-size: cover;
+  /* background-position: 0 -80px; */
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  /* background-size: cover; */
+  top: 0;
+  /* bottom: 0; */
 }
 .landing-page .landing-page-decoration {
-    background: url(/Images/dot-texture.png);
-    border-radius: 50%;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    color: rgb(33, 37, 41);
-    display: block;
-    width: 64vw;   
-    height: 140vh;
-    right: -32vw;
-    top: -20vh;
+  background: url(../Images/dot-texture.png);
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  color: rgb(33, 37, 41);
+  display: block;
+  width: 64vw;
+  height: 140vh;
+  right: -32vw;
+  top: -20vh;
 }
 
 .landing-page .landing-page-info {
-    width: 30vw;
-    height: 484px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    color: white;
-    position: relative;
-    left: 17vw;
-    top: 15vh;
-    /* border: red solid 1px; */
+  width: 30vw;
+  height: 484px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  color: white;
+  position: relative;
+  left: 17vw;
+  top: 15vh;
+  /* border: red solid 1px; */
 }
 .landing-page .landing-page-info .logo .logo-line img {
-    height: 90px;
-    background-color: rgba(0, 0, 0, 0);
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0);
 }
 .landing-page .landing-page-info .landing-page-name {
-    font-family: "Titillium Web", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .landing-page .landing-page-info .landing-page-name h1 {
-    position: relative;
-    order: 1;
-    font-size: 104px;
-    font-weight: 900;
-    top: -32px;
+  position: relative;
+  order: 1;
+  font-size: 104px;
+  font-weight: 900;
+  top: -32px;
 }
 .landing-page .landing-page-info .landing-page-name h2 {
-    font-weight: 500;
-    position: relative;
-    order: 0;
-    font-size: 22px;
-    top: 7px;
+  font-weight: 500;
+  position: relative;
+  order: 0;
+  font-size: 22px;
+  top: 7px;
 }
 .landing-page .landing-page-info .landing-page-des {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 384px;
-    line-height: 24px;
-    text-align: center;
-    position: relative;
-    top: -18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 384px;
+  line-height: 24px;
+  text-align: center;
+  position: relative;
+  top: -18px;
 }
 .landing-page .landing-page-info .landing-page-des p {
-    font-size: 18px;
-    font-weight: 500;
+  font-size: 18px;
+  font-weight: 500;
 }
-.landing-page .landing-page-info .landing-page-auth-toggle{
-    font-weight: 700;
-    display: flex;
-    position: absolute;
-    bottom: 0;
+.landing-page .landing-page-info .landing-page-auth-toggle {
+  font-weight: 700;
+  display: flex;
+  position: absolute;
+  bottom: 0;
 }
 .landing-page .landing-page-info .landing-page-auth-toggle label {
-    width: 180px;
-    height: 54px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: white 1px solid;
-    cursor: pointer;
+  width: 180px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white 1px solid;
+  cursor: pointer;
 }
 
-.landing-page .landing-page-info .landing-page-auth-toggle  label.login {
-    border-radius: 10px 0 0 10px;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in-out;
+.landing-page .landing-page-info .landing-page-auth-toggle label.login {
+  border-radius: 10px 0 0 10px;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
 }
-.landing-page .landing-page-info .landing-page-auth-toggle  label.register {
-    border-radius: 0 10px 10px 0;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in-out;
+.landing-page .landing-page-info .landing-page-auth-toggle label.register {
+  border-radius: 0 10px 10px 0;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
 }
 
 .landing-page .landing-page-account {
-    height: 100vh;
-    width: 484px;
-    position: absolute;
-    top: 0;
-    right: 13vw;
-    display: flex;
-    align-items: center;
-    /* border: red solid 1px; */
+  height: 100vh;
+  width: 484px;
+  position: absolute;
+  top: 0;
+  right: 13vw;
+  display: flex;
+  align-items: center;
+  /* border: red solid 1px; */
 }
 .landing-page .landing-page-account .account-login {
-    width: 484px;
-    height: 626px;
-    padding: 64px;
-    background-color: white;
-    border-radius: 10px;
-    position: absolute;
-    color: rgb(62, 63, 94);
-    box-shadow: rgb(248, 248, 248) 10px 0 10px;
-    inset: auto auto;
-    /* border: red solid; */
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.6s ease-in-out; 
-    display: block;
-    z-index: 1;
-    transform: translateX(200px);
+  width: 484px;
+  height: 626px;
+  padding: 64px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  color: rgb(62, 63, 94);
+  box-shadow: rgb(248, 248, 248) 10px 0 10px;
+  inset: auto auto;
+  /* border: red solid; */
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s ease-in-out;
+  display: block;
+  z-index: 1;
+  transform: translateX(200px);
 }
 .landing-page .landing-page-account .account-login .page-decorate {
-    position: absolute;
-    top: -68px;
-    right: 405px;
-    z-index: 9999;
+  position: absolute;
+  top: -68px;
+  right: 405px;
+  z-index: 9999;
 }
 .landing-page .landing-page-account .account-login .title {
-    font-size: 26px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: -5px;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -5px;
 }
 .landing-page .landing-page-account .account-login .form-input {
-    position: relative;
+  position: relative;
 }
 .landing-page .landing-page-account .account-login .form-input:nth-child(3) {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 .landing-page .landing-page-account .account-login .form-input:nth-child(4) {
-    margin-top: 28px;
+  margin-top: 28px;
 }
 .landing-page .landing-page-account .account-login .form-input input {
-    height: 54px;
-    width: 100%;
-    border: 1px solid rgb(173, 175, 202);
-    border-radius: 12px;
-    position: relative;
-    padding-left: 25px;
+  height: 54px;
+  width: 100%;
+  border: 1px solid rgb(173, 175, 202);
+  border-radius: 12px;
+  position: relative;
+  padding-left: 25px;
 }
 .landing-page .landing-page-account .account-login .form-input label {
-    color: rgb(173, 175, 202);
-    position: absolute;
-    z-index: 999;
-    font-weight: 700;
-    transition-duration: 0.4s;
+  color: rgb(173, 175, 202);
+  position: absolute;
+  z-index: 999;
+  font-weight: 700;
+  transition-duration: 0.4s;
 }
-.landing-page .landing-page-account .account-login .form-input:nth-child(3) label {
-    top: 15px;
-    left: 20px;
+.landing-page
+  .landing-page-account
+  .account-login
+  .form-input:nth-child(3)
+  label {
+  top: 15px;
+  left: 20px;
 }
-.landing-page .landing-page-account .account-login .form-input:nth-child(4) label {
-    top: 15px;
-    left: 20px;
+.landing-page
+  .landing-page-account
+  .account-login
+  .form-input:nth-child(4)
+  label {
+  top: 15px;
+  left: 20px;
 }
 .landing-page .landing-page-account .account-login .form-between-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 28px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 28px 0;
 }
 .landing-page .landing-page-account .account-login .form-between-line a {
-    text-decoration: none;
-    font-weight: 700;
-    color: rgb(173, 175, 202);
-    font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(173, 175, 202);
+  font-size: 14px;
 }
 .landing-page .landing-page-account .account-login .form-between-line label {
-    font-weight: 700;
-    font-size: 14px;
-    cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
 }
-.landing-page .landing-page-account .account-login .form-between-line label::before {
-    content: "";
-    font-size: 14px;
-    font-weight: 900;
-    color: white;
-    padding: 1px 10px;
-    border: solid 1px rgb(173, 175, 202);
-    border-radius: 5px;
-    margin-right: 10px;
-    background-color: #23D2E2;   
-    transition-duration: 0.3s;
+.landing-page
+  .landing-page-account
+  .account-login
+  .form-between-line
+  label::before {
+  content: "";
+  font-size: 14px;
+  font-weight: 900;
+  color: white;
+  padding: 1px 10px;
+  border: solid 1px rgb(173, 175, 202);
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #23d2e2;
+  transition-duration: 0.3s;
 }
-.landing-page .landing-page-account .account-login .form-between-line label::after {
-    content: "+";
-    color: white; 
-    font-size: 30px;
-    font-weight: 900;
-    display: inline-block;
-    transform: translateX(-113.5px) translateY(5.5px) rotate(45deg);
+.landing-page
+  .landing-page-account
+  .account-login
+  .form-between-line
+  label::after {
+  content: "+";
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  display: inline-block;
+  transform: translateX(-113.5px) translateY(5.5px) rotate(45deg);
 }
-.landing-page .landing-page-account .account-login .form-submit {    
-    font-size: 14px;
-    margin-top: 28px;
-    display: block;
-    text-decoration: none;
-    font-weight: 700;
-    color: white;
-    height: 54px;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    background-color: rgb(97, 93, 250);
-    cursor: pointer;
-    transition: 0.4s;
+.landing-page .landing-page-account .account-login .form-submit {
+  font-size: 14px;
+  margin-top: 28px;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  height: 54px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: rgb(97, 93, 250);
+  cursor: pointer;
+  transition: 0.4s;
 }
 .landing-page .landing-page-account .account-login .lined-text {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    height: 14px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 14px;
 }
 .landing-page .landing-page-account .account-login .lined-text p {
-    font-weight: 700;
-    position: absolute;
-    background-color: white;
-    padding: 0 20px;
-    z-index: 1;
+  font-weight: 700;
+  position: absolute;
+  background-color: white;
+  padding: 0 20px;
+  z-index: 1;
 }
 .landing-page .landing-page-account .account-login .lined-text hr {
-    border-bottom: solid 1px rgb(205, 207, 214);
-    position: absolute;
-    width: 100%;
+  border-bottom: solid 1px rgb(205, 207, 214);
+  position: absolute;
+  width: 100%;
 }
 .landing-page .landing-page-account .account-login .social-links {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 30px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
 }
 .landing-page .landing-page-account .account-login .social-links .facebook {
-    font-size: 14px;
-    height: 40px;
-    width: 40px;
-    background-color: #3763D2;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    cursor: pointer;
-    transition-duration: 0.4s;
+  font-size: 14px;
+  height: 40px;
+  width: 40px;
+  background-color: #3763d2;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 .landing-page .landing-page-account .account-login .social-links .twitter {
-    font-size: 14px;
-    height: 40px;
-    width: 40px;
-    background-color: #1ABCFF;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    cursor: pointer;
-    transition-duration: 0.4s;
+  font-size: 14px;
+  height: 40px;
+  width: 40px;
+  background-color: #1abcff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 .landing-page .landing-page-account .account-login .social-links .twitch {
-    font-size: 14px;
-    height: 40px;
-    width: 40px;
-    background-color: #7B5DFA;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    cursor: pointer;
-    transition-duration: 0.4s;
+  font-size: 14px;
+  height: 40px;
+  width: 40px;
+  background-color: #7b5dfa;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 .landing-page .landing-page-account .account-login .social-links .youtube {
-    font-size: 14px;
-    height: 40px;
-    width: 40px;
-    background-color: #FD434F;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    cursor: pointer;
-    transition-duration: 0.4s;
+  font-size: 14px;
+  height: 40px;
+  width: 40px;
+  background-color: #fd434f;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 svg {
-    width: 18px;
+  width: 18px;
 }
 
 .landing-page .landing-page-account .account-register {
-    width: 484px;
-    height: 740px;
-    padding: 64px;
-    background-color: white;
-    border-radius: 10px;
-    position: absolute;
-    color: rgb(62, 63, 94);
-    box-shadow: rgb(248, 248, 248) 10px 0 10px;
-    /* border: red solid 1px; */
-    top: -27px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.6s ease-in-out; 
-    display: block;
-    z-index: 1;
-    transform: translateX(200px);
-    inset: auto auto;
+  width: 484px;
+  height: 740px;
+  padding: 64px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  color: rgb(62, 63, 94);
+  box-shadow: rgb(248, 248, 248) 10px 0 10px;
+  /* border: red solid 1px; */
+  top: -27px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s ease-in-out;
+  display: block;
+  z-index: 1;
+  transform: translateX(200px);
+  inset: auto auto;
 }
 .landing-page .landing-page-account .account-register .page-decorate {
-    position: absolute;
-    top: -10px;
-    right: 405px;
-    z-index: 9999;
+  position: absolute;
+  top: -10px;
+  right: 405px;
+  z-index: 9999;
 }
 .landing-page .landing-page-account .account-register .title {
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-}   
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
 .landing-page .landing-page-account .account-register .form-input input {
-    height: 54px;
-    width: 100%;
-    border: 1px solid rgb(173, 175, 202);
-    border-radius: 12px;
-    position: relative;
-    padding-left: 25px;
+  height: 54px;
+  width: 100%;
+  border: 1px solid rgb(173, 175, 202);
+  border-radius: 12px;
+  position: relative;
+  padding-left: 25px;
 }
 .landing-page .landing-page-account .account-register .form-input label {
-    color: rgb(173, 175, 202);
-    position: absolute;
-    z-index: 999;
-    font-weight: 700;
-    top: 15px;
-    left: 20px;
-    transition-duration: 0.4s;
-
+  color: rgb(173, 175, 202);
+  position: absolute;
+  z-index: 999;
+  font-weight: 700;
+  top: 15px;
+  left: 20px;
+  transition-duration: 0.4s;
 }
 .landing-page .landing-page-account .account-register .form-input {
-    position: relative;
+  position: relative;
 }
 .landing-page .landing-page-account .account-register .form-input:nth-child(3) {
-    margin-top: 76px;
+  margin-top: 76px;
 }
 .landing-page .landing-page-account .account-register .form-input:nth-child(4) {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 .landing-page .landing-page-account .account-register .form-input:nth-child(5) {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 .landing-page .landing-page-account .account-register .form-input:nth-child(6) {
-    margin-top: 24px;
+  margin-top: 24px;
 }
 .landing-page .landing-page-account .account-register .form-between-line {
-    font-weight: 700;
-    font-size: 14px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: flex-start;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 .landing-page .landing-page-account .account-register .form-between-line label {
-    cursor: pointer;
+  cursor: pointer;
 }
-.landing-page .landing-page-account .account-register .form-between-line label::before {
-    content: "";
-    font-size: 14px;
-    font-weight: 900;
-    color: white;
-    padding: 1px 10px;
-    border: solid 1px rgb(173, 175, 202);
-    border-radius: 5px;
-    margin-right: 10px;
-    background-color: #23D2E2;   
-    transition-duration: 0.3s;
+.landing-page
+  .landing-page-account
+  .account-register
+  .form-between-line
+  label::before {
+  content: "";
+  font-size: 14px;
+  font-weight: 900;
+  color: white;
+  padding: 1px 10px;
+  border: solid 1px rgb(173, 175, 202);
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #23d2e2;
+  transition-duration: 0.3s;
 }
-.landing-page .landing-page-account .account-register .form-between-line label::after {
-    content: "+";
-    color: white; 
-    font-size: 30px;
-    font-weight: 900;
-    display: inline-block;
-    transform: translateX(-244.5px) translateY(5.5px) rotate(45deg);
+.landing-page
+  .landing-page-account
+  .account-register
+  .form-between-line
+  label::after {
+  content: "+";
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  display: inline-block;
+  transform: translateX(-244.5px) translateY(5.5px) rotate(45deg);
 }
 .landing-page .landing-page-account .account-register .form-submit {
-    margin-top: 20px;
-    display: block;
-    text-decoration: none;
-    font-weight: 700;
-    color: white;
-    height: 54px;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    background-color: #23D2E2;
-    cursor: pointer;
-    transition: 0.4s;
+  margin-top: 20px;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  height: 54px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #23d2e2;
+  cursor: pointer;
+  transition: 0.4s;
 }
 .landing-page .landing-page-account .account-register .register-des {
-    font-size: 14px;
-    font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
 }
 .landing-page .landing-page-account .account-register .register-des p a {
-    font-size: 14px;
-    font-weight: 700;
-    color: #23D2E2;
-    text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #23d2e2;
+  text-decoration: none;
 }
 
 /* .account-login {
@@ -450,7 +473,6 @@ svg {
 .account-register {
     
 } */
-
 
 #login:checked ~ .landing-page-info .landing-page-auth-toggle .login {
   background: white;
@@ -463,142 +485,183 @@ svg {
 }
 
 #register:checked ~ .landing-page-account .account-register {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 #login:checked ~ .landing-page-account .account-login {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 
 .landing-page .landing-page-account .account-login .form-submit:hover {
-    background-color: #6047cf;
+  background-color: #6047cf;
 }
 .landing-page .landing-page-account .account-login .form-submit:active {
-    border: solid 2px black;
-    transition: 0s;
+  border: solid 2px black;
+  transition: 0s;
 }
 .landing-page .landing-page-account .account-register .form-submit:hover {
-    background-color: #17aebc;
+  background-color: #17aebc;
 }
 .landing-page .landing-page-account .account-register .form-submit:active {
-    border: solid 2px black;
-    transition: 0s;
+  border: solid 2px black;
+  transition: 0s;
 }
 
-.landing-page .landing-page-account .account-login .social-links .facebook:hover {
-    transform: translateY(-4px);
+.landing-page
+  .landing-page-account
+  .account-login
+  .social-links
+  .facebook:hover {
+  transform: translateY(-4px);
 }
-.landing-page .landing-page-account .account-login .social-links .twitter:hover {
-    transform: translateY(-4px);
+.landing-page
+  .landing-page-account
+  .account-login
+  .social-links
+  .twitter:hover {
+  transform: translateY(-4px);
 }
 .landing-page .landing-page-account .account-login .social-links .twitch:hover {
-    transform: translateY(-4px);
+  transform: translateY(-4px);
 }
-.landing-page .landing-page-account .account-login .social-links .youtube:hover {
-    transform: translateY(-4px);
+.landing-page
+  .landing-page-account
+  .account-login
+  .social-links
+  .youtube:hover {
+  transform: translateY(-4px);
 }
 
 .landing-page .landing-page-account .account-login .form-between-line a:hover {
-    color: #23D2E2;
+  color: #23d2e2;
 }
 
 body::selection {
-    background-color: #23D2E2;
+  background-color: #23d2e2;
 }
 
-.landing-page .landing-page-account .account-login .form-input input:focus + label {
-    transform: translateY(-25px);
-    font-size: 14px;
-    background-color: white;
-    padding: 0 5px;
+.landing-page
+  .landing-page-account
+  .account-login
+  .form-input
+  input:focus
+  + label {
+  transform: translateY(-25px);
+  font-size: 14px;
+  background-color: white;
+  padding: 0 5px;
 }
-.landing-page .landing-page-account .account-register .form-input input:focus + label {
-    transform: translateY(-25px);
-    font-size: 14px;
-    background-color: white;
-    padding: 0 5px;
+.landing-page
+  .landing-page-account
+  .account-register
+  .form-input
+  input:focus
+  + label {
+  transform: translateY(-25px);
+  font-size: 14px;
+  background-color: white;
+  padding: 0 5px;
 }
 .landing-page .landing-page-account .account-login .form-input input:focus {
-    border-color: #7B5DFA;
+  border-color: #7b5dfa;
 }
 .landing-page .landing-page-account .account-register .form-input input:focus {
-    border-color: #7B5DFA;
+  border-color: #7b5dfa;
 }
 
-.landing-page .landing-page-account .account-register .form-between-line input:checked ~ label::before {
-    background-color: white;
+.landing-page
+  .landing-page-account
+  .account-register
+  .form-between-line
+  input:checked
+  ~ label::before {
+  background-color: white;
 }
-.landing-page .landing-page-account .account-login .form-between-line input:checked ~ label::before {
-    background-color: white;
+.landing-page
+  .landing-page-account
+  .account-login
+  .form-between-line
+  input:checked
+  ~ label::before {
+  background-color: white;
 }
+
+/* tách file css responsive thành 1 file riêng nhé rồi link nó ở dưới file css ban đầu */
 
 @media screen and (max-width: 1499.98px) {
-    .landing-page .landing-page-decoration {
-        display: none;
-    }
-    .landing-page .landing-page-info {
-        left: 10.5vw;
-    }
+  .landing-page .landing-page-decoration {
+    display: none;
+  }
+  .landing-page .landing-page-info {
+    left: 10.5vw;
+  }
 }
 @media screen and (max-width: 1363.98px) {
-    .landing-page .landing-page-info .landing-page-des{
-        display: none;
-    }
-    .landing-page .landing-page-info .landing-page-auth-toggle {
-        top: 280px;
-    }
-    .landing-page {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-    .landing-page .landing-page-account {
-        position: r;
-        inset: 15vh auto;
-    }
-    .landing-page .landing-page-info {
-        position: absolute;
-        z-index: 99999;
-        inset: 5.5vh auto;
-    }
-    .landing-page .landing-page-account .account-register {
-        top: 24vh;
-        box-shadow: none;
-    }
-    .landing-page .landing-page-account .account-login {
-        box-shadow: none;
-    }
-    .page-decorate {
-        display: none;
-    }
+  .landing-page .landing-page-info .landing-page-des {
+    display: none;
+  }
+  .landing-page .landing-page-info .landing-page-auth-toggle {
+    top: 280px;
+  }
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .landing-page .landing-page-account {
+    position: relative;
+    top: 0;
+  }
+  .landing-page .landing-page-info {
+    position: absolute;
+    z-index: 99999;
+    inset: 5.5vh auto;
+  }
+  .landing-page .landing-page-account .account-register {
+    top: 24vh;
+    box-shadow: none;
+  }
+  .landing-page .landing-page-account .account-login {
+    box-shadow: none;
+  }
+  .page-decorate {
+    display: none;
+  }
 }
+
+@media screen and (max-width: 991.98px) {
+  .landing-page .landing-page-account {
+    top: 12%;
+    right: 21%;
+  }
+}
+
 @media screen and (max-width: 499.98px) {
-    .landing-page .landing-page-info .landing-page-name h1 {
-        font-size: 3.5rem;
-        top: -1vh;
-    }
-    .landing-page .landing-page-info .landing-page-auth-toggle {
-        top: 230px;
-    }
-    .landing-page .landing-page-account .account-register {
-        padding: 32px;
-        min-width: 300px;
-    }
-    .landing-page .landing-page-account .account-login {
-        padding: 32px;
-        min-width: 300px;
-    }
-    /* .landing-page .landing-page-account .account-login {
+  .landing-page .landing-page-info .landing-page-name h1 {
+    font-size: 3.5rem;
+    top: -1vh;
+  }
+  .landing-page .landing-page-info .landing-page-auth-toggle {
+    top: 230px;
+  }
+  .landing-page .landing-page-account .account-register {
+    padding: 32px;
+    min-width: 300px;
+  }
+  .landing-page .landing-page-account .account-login {
+    padding: 32px;
+    min-width: 300px;
+  }
+  /* .landing-page .landing-page-account .account-login {
         inset: 20vh auto;
         padding: 0 15px;
     }
     .landing-page .landing-page-account .account-register {
         inset: 20vh auto;
     } */
-    
 }
