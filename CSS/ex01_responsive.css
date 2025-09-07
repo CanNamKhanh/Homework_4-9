@@ -1,0 +1,77 @@
+@media screen and (max-width: 1499.98px) {
+  .landing-page .landing-page-decoration {
+    display: none;
+  }
+  .landing-page .landing-page-info {
+    left: 10.5vw;
+  }
+}
+@media screen and (max-width: 1363.98px) {
+  .landing-page .landing-page-info .landing-page-des {
+    display: none;
+  }
+  .landing-page .landing-page-info .landing-page-auth-toggle {
+    top: 280px;
+  }
+  .landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: scroll;
+  }
+  .landing-page .landing-page-account {
+    position: relative;
+    top: 180px;
+    left: 0;
+  }
+  .landing-page .landing-page-info {
+    position: absolute;
+    z-index: 99999;
+    inset: 5.5vh auto;
+  }
+  .landing-page .landing-page-account .account-register {
+    top: 290px;
+    box-shadow: none;
+  }
+  .landing-page .landing-page-account .account-login {
+    box-shadow: none;
+    top: 290px;
+  }
+  .page-decorate {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .landing-page .landing-page-account {
+    top: 180px;
+    right: 21%;
+  }
+}
+
+@media screen and (max-width: 499.98px) {
+  .landing-page .landing-page-info .landing-page-name h1 {
+    font-size: 3.5rem;
+    top: -1vh;
+  }
+  .landing-page .landing-page-info .landing-page-auth-toggle {
+    top: 230px;
+  }
+  .landing-page .landing-page-account .account-register {
+    padding: 32px;
+    min-width: 300px;
+  }
+  .landing-page .landing-page-account .account-login {
+    padding: 32px;
+    min-width: 300px;
+  }
+  /* .landing-page .landing-page-account .account-login {
+        inset: 20vh auto;
+        padding: 0 15px;
+    }
+    .landing-page .landing-page-account .account-register {
+        inset: 20vh auto;
+    } */
+}

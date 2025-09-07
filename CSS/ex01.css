@@ -139,7 +139,8 @@ body {
   position: absolute;
   color: rgb(62, 63, 94);
   box-shadow: rgb(248, 248, 248) 10px 0 10px;
-  inset: auto auto;
+  top: auto;
+  right: auto;
   /* border: red solid; */
   opacity: 0;
   visibility: hidden;
@@ -359,7 +360,8 @@ svg {
   display: block;
   z-index: 1;
   transform: translateX(200px);
-  inset: auto auto;
+  top: auto;
+  right: auto;
 }
 .landing-page .landing-page-account .account-register .page-decorate {
   position: absolute;
@@ -587,81 +589,4 @@ body::selection {
   input:checked
   ~ label::before {
   background-color: white;
-}
-
-/* tách file css responsive thành 1 file riêng nhé rồi link nó ở dưới file css ban đầu */
-
-@media screen and (max-width: 1499.98px) {
-  .landing-page .landing-page-decoration {
-    display: none;
-  }
-  .landing-page .landing-page-info {
-    left: 10.5vw;
-  }
-}
-@media screen and (max-width: 1363.98px) {
-  .landing-page .landing-page-info .landing-page-des {
-    display: none;
-  }
-  .landing-page .landing-page-info .landing-page-auth-toggle {
-    top: 280px;
-  }
-  .landing-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .landing-page .landing-page-account {
-    position: relative;
-    top: 0;
-  }
-  .landing-page .landing-page-info {
-    position: absolute;
-    z-index: 99999;
-    inset: 5.5vh auto;
-  }
-  .landing-page .landing-page-account .account-register {
-    top: 24vh;
-    box-shadow: none;
-  }
-  .landing-page .landing-page-account .account-login {
-    box-shadow: none;
-  }
-  .page-decorate {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 991.98px) {
-  .landing-page .landing-page-account {
-    top: 12%;
-    right: 21%;
-  }
-}
-
-@media screen and (max-width: 499.98px) {
-  .landing-page .landing-page-info .landing-page-name h1 {
-    font-size: 3.5rem;
-    top: -1vh;
-  }
-  .landing-page .landing-page-info .landing-page-auth-toggle {
-    top: 230px;
-  }
-  .landing-page .landing-page-account .account-register {
-    padding: 32px;
-    min-width: 300px;
-  }
-  .landing-page .landing-page-account .account-login {
-    padding: 32px;
-    min-width: 300px;
-  }
-  /* .landing-page .landing-page-account .account-login {
-        inset: 20vh auto;
-        padding: 0 15px;
-    }
-    .landing-page .landing-page-account .account-register {
-        inset: 20vh auto;
-    } */
 }
