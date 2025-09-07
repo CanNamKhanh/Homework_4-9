@@ -14,7 +14,7 @@ body {
 }
 
 .landing-page {
-    background: url(/Images/landing-background.jpg);
+    background: url(./Images/landing-background.jpg);
     background-size: cover;
     /* background-position: 0 -80px; */
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body {
     /* bottom: 0; */
 }
 .landing-page .landing-page-decoration {
-    background: url(/Images/dot-texture.png);
+    background: url(./Images/dot-texture.png);
     border-radius: 50%;
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -535,7 +535,7 @@ body::selection {
     background-color: white;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1499.98px) {
     .landing-page .landing-page-decoration {
         display: none;
     }
@@ -543,7 +543,7 @@ body::selection {
         left: 10.5vw;
     }
 }
-@media screen and (max-width: 1364px) {
+@media screen and (max-width: 1363.98px) {
     .landing-page .landing-page-info .landing-page-des{
         display: none;
     }
@@ -577,7 +577,7 @@ body::selection {
         display: none;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499.98px) {
     .landing-page .landing-page-info .landing-page-name h1 {
         font-size: 3.5rem;
         top: -1vh;
