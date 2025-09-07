@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+img {
+    width: 120px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.box {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.box .content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: blue solid; */
+}
+
+.box .content .menu {
+    display: flex;
+    /* border: red solid; */
+    justify-content: stretch;
+}
+
+.box .content .menu .navbar {
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+}
+.box .content .menu .contact {
+    margin-left: 30px;
+}
+.box .content .menu .contact a {
+    padding: 10px 30px;
+    background-color: white;
+    color: black;
+    border-radius: 99999px;
+    margin-left: -20px;
+}
+.box .content .menu .button {
+    margin-left: 10px;
+    display: none;
+    /* border: green solid; */
+}
+.box .content .menu .button label i {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 991.98px) {
+    .box .content .menu .button {
+        display: block;
+    }
+    .box .content .menu .navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .box .content .menu .contact {
+        display: none;
+    }
+}
+
+.lay .overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.371);
+}
+.lay {
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.4s;
+    position: absolute;
+    z-index: 9998;
+}
+
+input:checked ~ .lay {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.aside-menu {
+    width: 250px;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    z-index: 9999;
+    left: -250px;
+    transition-duration: 0.4s;
+}
+
+input:checked ~ .aside-menu {
+    left: 0;
+}
+
+.aside-menu .aside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.aside-menu .contact {
+    display: none;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 767.98px) {
+    .aside-menu .contact {
+        display: block;
+    }
+}
+
