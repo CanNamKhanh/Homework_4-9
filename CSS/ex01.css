@@ -14,7 +14,7 @@ body {
 }
 
 .landing-page {
-    background: url(./Images/landing-background.jpg);
+    background: url(/Images/landing-background.jpg);
     background-size: cover;
     /* background-position: 0 -80px; */
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body {
     /* bottom: 0; */
 }
 .landing-page .landing-page-decoration {
-    background: url(./Images/dot-texture.png);
+    background: url(/Images/dot-texture.png);
     border-radius: 50%;
     position: absolute;
     background-color: rgb(255, 255, 255);
